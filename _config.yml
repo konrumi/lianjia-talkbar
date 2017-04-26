@@ -25,7 +25,7 @@ github_username:  konrumi
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-tactile
+theme: minima
 gems:
   - jekyll-feed
 exclude:

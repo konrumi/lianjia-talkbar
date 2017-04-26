@@ -32,3 +32,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 lang: zh-CN
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

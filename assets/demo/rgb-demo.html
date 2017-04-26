@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RGB Demo</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            overflow: hidden;
+        }
+
+        .clearfix:after {
+            display: block;
+            width: 0;
+            height: 0;
+            content: '';
+            clear: both;
+        }
+
+        .colorbar-bar {
+            border-radius: 10px;
+        }
+
+
+        .w2 {
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+        .w3 {
+            float: left;
+            width: 33.33%;
+            height: 100%;
+        }
+
+        .colorbar-container {
+            height: 80%;
+            padding: 10%;
+            box-sizing: border-box;
+        }
+
+        .colorbar-bar-block {
+            position: relative;
+            height: 100%;
+        }
+
+        .colorbar-bar {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .colorbar-label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .led-wrap {
+            height: 50%;
+        }
+
+        .led-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 2px solid #fff;
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+
+        .led-r,
+        .led-g,
+        .led-b {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+        }
+        
+        .led-g {
+            left: 58px;
+            top: 10px;
+            background-color: #0f0;
+        }
+        .led-r {
+            left: 15px;
+            top: 90px;
+            background-color: #f00;
+        }
+        .led-b {
+            left: 100px;
+            top: 90px;
+            background-color: #00f;
+        }
+
+        .result {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="clearfix">
+
+<div class="w2 clearfix" id="ctrl">
+    <div class="w3">
+        <div class="colorbar-container">
+            <div class="colorbar-bar-block">
+                <div class="colorbar-bar" style="height: 0%;background-color: #f00;" id="barR"></div>
+            </div>
+            <label class="colorbar-label">
+                <span>R</span>
+                <input type="number" class="colorbar-input" min="0" max="255" value="0" id="inputR">
+            </label>
+        </div>
+    </div>
+
+    <div class="w3">
+        <div class="colorbar-container">
+            <div class="colorbar-bar-block">
+                <div class="colorbar-bar" style="height: 0%;background-color: #0f0;" id="barG"></div>
+            </div>
+            <label class="colorbar-label">
+                <span>G</span>
+                <input type="number" class="colorbar-input" min="0" max="255" value="0" id="inputG">
+            </label>
+        </div>
+    </div>
+
+    <div class="w3">
+        <div class="colorbar-container">
+            <div class="colorbar-bar-block">
+                <div class="colorbar-bar" style="height: 0%;background-color: #00f;" id="barB"></div>
+            </div>
+            <label class="colorbar-label">
+                <span>B</span>
+                <input type="number" class="colorbar-input" min="0" max="255" value="0" id="inputB">
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="w2">
+    <div class="led-wrap">
+        <div class="led-container">
+            <div class="led-r" id="ledR" style="opacity: 0;"></div>
+            <div class="led-g" id="ledG" style="opacity: 0;"></div>
+            <div class="led-b" id="ledB" style="opacity: 0;"></div>
+        </div>
+        <p style="text-align: center;">LED</p>
+    </div>
+    <div>
+        <div class="result" id="result"></div>
+        <p style="text-align: center;">Result</p>
+    </div>
+</div>
+
+<script>
+    (function() {
+        var ledR = document.querySelectorAll('#ledR')[0],
+            ledG = document.querySelectorAll('#ledG')[0],
+            ledB = document.querySelectorAll('#ledB')[0],
+            barR = document.querySelectorAll('#barR')[0],
+            barG = document.querySelectorAll('#barG')[0],
+            barB = document.querySelectorAll('#barB')[0],
+            inputR = document.querySelectorAll('#inputR')[0],
+            inputG = document.querySelectorAll('#inputG')[0],
+            inputB = document.querySelectorAll('#inputB')[0],
+            result = document.querySelectorAll('#result')[0];
+
+        function rederPage() {
+            var rValue = inputR.value,
+                gValue = inputG.value,
+                bValue = inputB.value;
+
+            ledR.style.opacity = (rValue / 255);
+            ledG.style.opacity = (gValue / 255);
+            ledB.style.opacity = (bValue / 255);
+
+            barR.style.height = (rValue / 255 * 100) + '%';
+            barG.style.height = (gValue / 255 * 100) + '%';
+            barB.style.height = (bValue / 255 * 100) + '%';
+
+            result.style.backgroundColor = ('rgb(' + rValue + ', ' + gValue + ', ' + bValue + ')');
+        }
+
+        document.querySelectorAll('#ctrl')[0].onchange = function() {
+            rederPage();
+        };
+    })();
+</script>
+</body>
+</html>

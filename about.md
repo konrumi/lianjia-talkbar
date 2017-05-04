@@ -4,12 +4,32 @@ title: 关于
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## 介绍
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+　链家网「来聊吧」是以产品技术为主的技术沙龙活动，旨在增进团队之间的技术交流，活跃技术氛围，让大家在生活中能对技术有更深理解、更多兴趣。
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+　本小站将暂时收录链家网「来聊吧」分享会的各期内容，以便于大家回顾与分享。若有意见与建议，欢迎随时反馈至邮件 miqimeng(at)lianjia.com ，非常感谢！
+
+## 参加
+
+　时刻恭迎您前来参与「来聊吧」技术讨论会。
+
+- **时间**
+
+　隔周周二 19:30
+
+- **地点**
+
+　福道大厦 3F-三里屯
+
+- **信息**
+
+　目前，相关信息暂收录于 [本小站](https://konrumi.github.io/lianjia-talkbar/) 。
+
+　
+
+---
+
+　
+
+　如果有任何意见或建议，或有意愿参与到活动中，欢迎随时邮件联系 miqimeng(at)lianjia.com ，非常感谢！

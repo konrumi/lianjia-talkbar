@@ -24,7 +24,7 @@ categories: posts
 
   　使用**一组参数**来表示**一个色彩**的**数学模型**。
 
-  ![色彩模型](//konrumi.github.io/lianjia-talkbar/assets/img/color_model.jpg)
+  ![色彩模型](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/color_model.jpg)
 
   > 　上图表示了一个通过 `红色（R）` `绿色（G）` `蓝色（B）` 3个参数表示一个色彩的色彩模型—— `RGB色彩模型` 。
 
@@ -32,7 +32,7 @@ categories: posts
 
   　根据色彩空间定义方式的不同，其包含的色彩广度也是不同且有限的。此外，现在人类几乎无法产生单一波长的色光，即纯色的色光（目前最接近纯色的光源为激光，但其成本太高，无法用于显示设备），因此我们的显示设备也拥有其局限性，也无法表现所有的色彩。像这样的色彩范围，被我们称为**色域**。
 
-  ![色域](//konrumi.github.io/lianjia-talkbar/assets/img/color_space_1.jpg)
+  ![色域](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/color_space_1.jpg)
 
   > 　上图的背景图形为 `CIE1931` 色彩空间色度图，该色彩空间基于人类感受色彩的方式而规定，这里可先暂时粗略地将其认为是色彩的全集。而其中灰色三角则是 `sRGB` 的色域。
 
@@ -59,7 +59,7 @@ categories: posts
   - `sRGB`
   - `Adobe RGB`
 
-  ![加法混色色彩空间](//konrumi.github.io/lianjia-talkbar/assets/img/color_space_2.jpg)
+  ![加法混色色彩空间](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/color_space_2.jpg)
 
   > 　上图展示了3种色彩空间的示意图，其中sRGB、Adobe RGB是使用同样色彩模型（RGB色彩模型），使用不同映射关系的色彩空间。
 
@@ -83,7 +83,7 @@ categories: posts
 
   - `CMYK`
 
-  ![CMYK色彩空间](//konrumi.github.io/lianjia-talkbar/assets/img/cmyk_1.jpg)
+  ![CMYK色彩空间](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/cmyk_1.jpg)
 
   > 　上图展示了减法混色的代表——CMYK色彩空间的4个关键分量和混合结果。虽然3个分量就足够表示色彩了（正如在RGB色彩模型之中），但是CMYK引入了第四个分量，以便贴近实际的应用情景。
 
@@ -91,7 +91,7 @@ categories: posts
 
   　CMYK色彩空间主要用于印刷品，而非自发光物体，因为印刷品的显色原理是通过颜料吸收某个特定波长的光，反射其它波长的光而显示色彩的。因此除了印刷品本身以外，还取决于光源等环境信息。理论上，即便是一张彩色打印的图像，在红色单一色光的光源下观察时，我们也只能观察到红色的单色图像，因为入射光源根本没有其他颜色，打印制品自然也无法反射其他颜色的光。（但是事实上我们还是能或多或少地观察到其他颜色，因为我们很难获得只发射某个特定波长的光源，我们的红光中仍然混合了一些其他波段的光。）
 
-  ![印刷颜料的显色原理](//konrumi.github.io/lianjia-talkbar/assets/img/cmyk_2.gif)
+  ![印刷颜料的显色原理](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/cmyk_2.gif)
 
   > 　上图动画简单展示了印刷颜料的显色原理。
 
@@ -111,7 +111,7 @@ categories: posts
   - `HSV/HSB`
   - `HSL`
 
-  ![HSV HSL色彩空间](//konrumi.github.io/lianjia-talkbar/assets/img/Hsl-hsv_models.png)
+  ![HSV HSL色彩空间](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/Hsl-hsv_models.png)
 
   > 　上图展示了 `HSV` 和 `HSL` 色彩空间的各种参数的含义。图片版权属于：Jacob Rus。
 
@@ -138,7 +138,7 @@ categories: posts
 
   - `CIELAB`
 
-  ![HSV HSL色彩空间](//konrumi.github.io/lianjia-talkbar/assets/img/Lab_color_space.png)
+  ![HSV HSL色彩空间](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/Lab_color_space.png)
 
   > 　上图展示了CIELAB色彩空间中，不同亮度轴(`L`)上的切片中，与sRGB色彩空间交集的部分。图片版权属于：Jacob Rus。
 
@@ -154,7 +154,7 @@ categories: posts
 
 ### 通道
 
-  ![Photoshop中的通道](//konrumi.github.io/lianjia-talkbar/assets/img/rgb_channel.jpg)
+  ![Photoshop中的通道](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/rgb_channel.jpg)
 
   > 　上图展示了图像处理软件Photoshop中的通道面板，可以看到，在RGB色彩模型中，一个图像拥有3个分量，也就拥有3个通道。
 
@@ -168,7 +168,7 @@ categories: posts
 
   　通过例子来详细介绍一下一张彩色图片的 `R` `G` `B` 3个通道分别记录了什么内容。
 
-  ![彩色图片](//konrumi.github.io/lianjia-talkbar/assets/img/rgb_channel_1.jpg)
+  ![彩色图片](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/rgb_channel_1.jpg)
 
   > 　上图展示了一张经典的彩色图片，与其 R G B 3个通道中分别记录的对应分量的灰度图像。
 
@@ -176,7 +176,7 @@ categories: posts
 
   　**B通道：**
 
-  ![彩色图片的B通道](//konrumi.github.io/lianjia-talkbar/assets/img/rgb_channel_4.jpg)
+  ![彩色图片的B通道](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/rgb_channel_4.jpg)
 
   　B通道的灰度图像。上半部分（天空）几乎呈现纯白色，代表显示上半部分的色彩需要非常高的蓝色分量的输出；下半部分（地面）几乎呈现纯黑色，代表显示下半部分的色彩几乎不需要蓝色分量的输出。
 
@@ -184,7 +184,7 @@ categories: posts
 
   　**G通道：**
 
-  ![彩色图片的G通道](//konrumi.github.io/lianjia-talkbar/assets/img/rgb_channel_3.jpg)
+  ![彩色图片的G通道](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/rgb_channel_3.jpg)
 
   　G通道的灰度图像。图像各处较为地平均分布着绿色的分量。灰度图像中，云部分的像素呈现白色，整体画面亮度较亮的部分，灰度图像也较白；画面较暗的部分，灰度图像也较暗。
 
@@ -192,7 +192,7 @@ categories: posts
 
   　**R通道：**
 
-  ![彩色图片的R通道](//konrumi.github.io/lianjia-talkbar/assets/img/rgb_channel_2.jpg)
+  ![彩色图片的R通道](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/rgb_channel_2.jpg)
 
   　R通道的灰度图像。天空中，白色的云的像素部分同样呈现白色，而蓝天背景则呈现黑色或较暗的灰色。地面部分灰色的亮度与彩色图像的亮度呈正相关。
 
@@ -204,7 +204,7 @@ categories: posts
 
   　在计算机中，位图通常通过二进制数据表示。而存储每个像素，需要使用的二进制位数，称为色彩深度，或位深度。
 
-  ![常见色彩深度与颜色数量关系表](//konrumi.github.io/lianjia-talkbar/assets/img/bit_depth.jpg)
+  ![常见色彩深度与颜色数量关系表](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/bit_depth.jpg)
 
   　很好理解，计算机通过 `n位`二进制 能表达的颜色数量是 `2^n`个。
 
@@ -212,19 +212,19 @@ categories: posts
 
   　一张图片的色彩数量如果不够表现这个图像中的全部色彩，原本平滑渐变的地方，就会出现断层。通过使用**抖动**的技术解决位深度不够导致的渐变断层问题——通过在两种颜色的交界处，用不同密度的像素点混合两种颜色，通过混合密度的渐变，让人眼产生色彩渐变的感觉。
 
-  ![24位色彩深度的彩色图像](//konrumi.github.io/lianjia-talkbar/assets/img/24bit.png)
+  ![24位色彩深度的彩色图像](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/24bit.png)
 
   > 　上图展示了一张24位深度的彩色图像。因为24位色彩深度可以展示1677万色，因此图像中的色彩渐变十分平滑。
 
-  ![8位色彩深度（Web安全色）的彩色图像](//konrumi.github.io/lianjia-talkbar/assets/img/8bit.png)
+  ![8位色彩深度（Web安全色）的彩色图像](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/8bit.png)
 
   > 　上图展示了一张8位深度的仅使用Web安全色的彩色图像。因为色彩数量不够表现原图中的所有色彩，因此图像中的色彩渐变明显出现了断层。
 
-  ![8位色彩深度（Web安全色）使用抖动的彩色图像](//konrumi.github.io/lianjia-talkbar/assets/img/8bit_dithered.png)
+  ![8位色彩深度（Web安全色）使用抖动的彩色图像](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/8bit_dithered.png)
 
   > 　上图展示了一张8位深度的仅使用Web安全色，但使用了抖动技术的彩色图像。可以看到，虽然与前一张图使用了同样的色彩，但是抖动技术使色彩的渐变更加平滑。
 
-  ![8位色彩深度的灰阶图像](//konrumi.github.io/lianjia-talkbar/assets/img/8bit_grayscale.png)
+  ![8位色彩深度的灰阶图像](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/8bit_grayscale.png)
 
   > 　上图展示了一张8位深度的灰阶图像。由于展示灰阶图像所需的色彩比彩色图像少很多，256色已经够用，因此虽然只有256色，但灰阶渐变仍然比较平滑。
 
@@ -254,19 +254,19 @@ categories: posts
 
   　JPEG格式会对图像进行有损压缩，压缩效率很高，可极大程度地缩小图像文件的大小。但是作为代价，被压缩后的图像会产生画质损失，这种画质损失在复杂纹理的图像中一般不太明显（如照片），而在纯色清晰边缘的图像中则非常恼人（如网页内部的小图表资源）。
 
-  ![JPEG压缩比例](//konrumi.github.io/lianjia-talkbar/assets/img/jpeg_zip.jpg)
+  ![JPEG压缩比例](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/jpeg_zip.jpg)
 
   > 　上图展示了一张文件大小947KB的文件，在不同压缩品质上经过JPEG压缩后的大小。可以看到，在30%的品质下，图像大小可以缩小为原来的1/7左右。
 
-  ![JPEG压缩样例](//konrumi.github.io/lianjia-talkbar/assets/img/jpeg_zip_example.jpg)
+  ![JPEG压缩样例](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/jpeg_zip_example.jpg)
 
   > 　上图展示了一张原图片和采用30%品质压缩后的JPEG图片的对比图。可以看到，虽然经过很大幅度的压缩，但是对于数字照片这类纹理复杂的图像，画质的损失并不明显。
 
-  ![JPEG压缩样例](//konrumi.github.io/lianjia-talkbar/assets/img/jpeg_zip_example_detail.jpg)
+  ![JPEG压缩样例](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/jpeg_zip_example_detail.jpg)
 
   > 　上图是使用30%品质压缩图片样例放大到400%的细节图。放大以后可以较明显地看到细节损失的情况。
 
-  ![JPEG压缩样例](//konrumi.github.io/lianjia-talkbar/assets/img/jpeg_zip_example_2.jpg)
+  ![JPEG压缩样例](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/jpeg_zip_example_2.jpg)
 
   > 　上图中的图片仍然采用30%品质进行JPEG压缩，但是对于边缘清晰、色彩简单的图像，JPEG压缩的细节损失就会非常明显。
 
@@ -308,9 +308,9 @@ categories: posts
 
   　GIF格式的图像支持透明，可以在可选的色彩中，选择一个代表像素透明。
 
-  ![GIF图像样例](//konrumi.github.io/lianjia-talkbar/assets/img/horo.gif)
+  ![GIF图像样例](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/horo.gif)
 
-  ![Photoshop中的时间轴面板](//konrumi.github.io/lianjia-talkbar/assets/img/gif_frames.png)
+  ![Photoshop中的时间轴面板](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/gif_frames.png)
 
   > 　上图展示了一张GIF格式的动画图片及其在Photoshop中的时间轴面板。实际上这张图片的动画是由两张图层叠加，并动态改变上面图层的透明度实现的。
 
@@ -356,7 +356,7 @@ categories: posts
 
   　PNG8与GIF类似，支持在颜色表中定义透明颜色以应用到像素；PNG24支持8位Alpha通道，可以表示最高256级透明。
 
-  ![PNG压缩与JPEG压缩的对比](//konrumi.github.io/lianjia-talkbar/assets/img/png_zip.jpg)
+  ![PNG压缩与JPEG压缩的对比](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/png_zip.jpg)
 
   - **总结**
 
@@ -384,13 +384,13 @@ categories: posts
 
   　由于8位色彩深度的256色图像表示方式所能展现的颜色太少，而图片通常又并非包含整个sRGB色域的所有色彩，因此直接使用Web安全色通常会造成浪费，即并非所有Web安全色都被使用。因此，通常使用一种被称作**颜色查找表**的方式，进行8位256色图像的显示。GIF和PNG8均支持颜色查找表。
 
-  ![使用Web安全色与颜色查找表的图像的差别](//konrumi.github.io/lianjia-talkbar/assets/img/clut_1.jpg)
+  ![使用Web安全色与颜色查找表的图像的差别](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/clut_1.jpg)
 
   > 上图分别展示了使用Web安全色与使用颜色查找表技术显示的8位深度图像的差别。
 
   　可以看出，左侧图像使用Web安全色，因此色彩数量较少，而Web安全色中的红、橙等色相的颜色均为被使用，造成了极大的浪费。色彩数量的减少，导致图像中的渐变出现了明显的断层。右侧的图像，通过一种被称作**减低颜色深度算法**的算法，从原图的极多色彩中，挑选出256个最常被使用的色彩，填入一个色表中，而图像中的每个像素，可直接使用8位二进制表示一个下标，找到色表中的指定色彩用于显示。因此，256个色彩得到充分应用，图片的色彩断层问题得到一定程度的缓解。
 
-  ![用Web安全色填充颜色查找表与用实际图像中使用的颜色填充颜色查找表的差别](//konrumi.github.io/lianjia-talkbar/assets/img/clut_2.jpg)
+  ![用Web安全色填充颜色查找表与用实际图像中使用的颜色填充颜色查找表的差别](//konrumi.github.io/lianjia-talkbar/assets/img/colors-images-and-image-file-formats/clut_2.jpg)
 
   > 上图分别展示了使用Web安全色和使用减低颜色深度算法的色表。可以看到，Web安全色仅使用了44个颜色，距8位色彩深度能表现的256个颜色存在一定的差距。
 

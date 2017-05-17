@@ -83,16 +83,20 @@ categories: posts
 
 4. 动画的回弹属性可以让人感到非常灵动，例如cubic-bezier(.32,-.11,.32,1.5)
 
-### 交互上的积极反馈
+- **交互上的积极反馈**
+
 ![](//konrumi.github.io/lianjia-talkbar/assets/img/improve-user-experience/4.gif)
 
-### 记得给用户激励
+- **记得给用户激励**
+
 ![](//konrumi.github.io/lianjia-talkbar/assets/img/improve-user-experience/5.gif)
 
-### 与用户的互动很重要
+- **与用户的互动很重要**
+
 ![](//konrumi.github.io/lianjia-talkbar/assets/img/improve-user-experience/6.gif)
 
-### 等待的时间也不要让用户太无聊
+- **等待的时间也不要让用户太无聊**
+
 ![](//konrumi.github.io/lianjia-talkbar/assets/img/improve-user-experience/7.gif)
 
 　
@@ -108,3 +112,11 @@ categories: posts
 　
 
 ## 6 总结--易用好用才是好的用户体验设计
+
+　
+
+---
+
+　
+
+  如果您需要本次分享的ppt下载，请点击 [这里](//konrumi.github.io/lianjia-talkbar/assets/archive/从细节提升产品的用户体验.ppt) 。
